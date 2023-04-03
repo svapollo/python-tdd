@@ -28,10 +28,7 @@ class Funcionario:
 
     def e_diretor(self):
         lista_diretoria = ['Paulo Bragança', 'Antonio Windsor', 'Jose Bourbon']
-        if self._salario >= 100000 and (self.nome in lista_diretoria):
-            return True
-        else:
-            return False
+        return self._salario >= 100000 and (self.nome in lista_diretoria)
 
     def reduzir_salario(self):
         if self.e_diretor():
