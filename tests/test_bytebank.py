@@ -25,7 +25,8 @@ class TestClass:
         entrada_nome = 'Paulo Bragança'
         esperado = 90000
 
-        funcionario_teste = Funcionario(entrada_nome, '01/01/2000', entrada_salario)
+        funcionario_teste = Funcionario(entrada_nome, '01/01/2000',
+                                        entrada_salario)
         funcionario_teste.reduzir_salario()  # When
         resultado = funcionario_teste.salario
 
