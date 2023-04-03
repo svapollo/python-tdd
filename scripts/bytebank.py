@@ -26,6 +26,11 @@ class Funcionario:
         nome_quebrado = nome_completo.split(' ')
         return nome_quebrado[-1]
 
+    def reduzir_salario(self):
+        lista_diretoria = ['Paulo Bragança', 'Antonio Windsor', 'Jose Bourbon']
+        if self._salario >= 100000 and (self.nome in lista_diretoria):
+            self._salario = self._salario * 0.9
+
     def calcular_bonus(self):
         valor = self._salario * 0.1
         if valor > 1000:
