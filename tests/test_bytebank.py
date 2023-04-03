@@ -19,3 +19,14 @@ class TestClass:
         resultado = sobrenome_teste.sobrenome()  # When
 
         assert resultado == esperado  # Then
+
+    def test_quando_reduzir_salario_recebe_100000_deve_retornar_90000(self):
+        entrada_salario = 100000  # Given
+        entrada_nome = 'Paulo Bragança'
+        esperado = 90000
+
+        funcionario_teste = Funcionario(entrada_nome, '01/01/2000', entrada_salario)
+        funcionario_teste.reduzir_salario()  # When
+        resultado = funcionario_teste.salario
+
+        assert resultado == esperado  # Then
